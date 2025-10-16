@@ -12,7 +12,8 @@ app.register_blueprint(students_subjects_bp, url_prefix='/students_subjects')
 
 @app.route('/')
 def home():
-    return {"message": "Welcome to the Flask API 🎓"}
+    return {"message": "Welcome to the Flask API !"}
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=True)
+
